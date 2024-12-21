@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Akun - SkillSpan</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="registrationpage.css" />
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="../Login Page/vid login page/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <header class="nav">
+        <nav class="navbar">
+            <a href="#">
+                <img src="../Login Page/img login page/logo Daftar.png" alt="Logo" />
+            </a>
+            <span>SkillSpan</span>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="logo">
+            <img src="../Login Page/img login page/logo.png" alt="Logo Skilvul" />
+        </div>
+        
+        <h1>Daftarkan Akunmu</h1>
+        <p class="subtitle">Yuk, daftarkan akunmu sekarang juga!</p>
+        
+        <button class="btn-google">
+            <img src="../Login Page/img login page/google.png" alt="Google Icon" />
+            Masuk dengan Google
+        </button>
+        
+        <div class="separator">
+            <span>atau</span>
+        </div>
+        
+        <form action="your-action-url-here" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="firstname">Nama Depan <span class="required" style="color: red">*</span></label>
+                <input type="text" id="firstname" name="firstname" placeholder="Masukkan nama depan" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="lastname">Nama Belakang <span class="required" style="color: red">*</span></label>
+                <input type="text" id="lastname" name="lastname" placeholder="Masukkan nama belakang" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email <span class="required" style="color: red">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="number">Nomor WhatsApp <span class="required" style="color: red">*</span></label>
+                <input type="tel" id="number" name="number" placeholder="Masukkan nomor" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password <span class="required" style="color: red">*</span></label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Minimal 6 karakter, 1 huruf besar, 1 huruf kecil dan 1 angka" required />
+                    <span id="togglePassword" class="eye-icon">
+                        <img src="../Login Page/img login page/show.png" alt="Tampilkan/Sembunyikan Password" />
+                    </span>
+                </div>
+
+                <label for="confirmpassword">Ulangi Password <span class="required" style="color: red">*</span></label>
+                <div class="password-container">
+                    <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Ulangi Password" required />
+                    <span id="togglePassword" class="eye-icon">
+                        <img src="../Login Page/img login page/show.png" alt="Tampilkan/Sembunyikan Password" />
+                    </span>
+                </div>
+            </div>
+            
+                <div class="form-group-checkbox">
+                    <label class="form-group-checkbox">
+                    <input type="checkbox" name="terms" required /> Saya setuju dengan <a href="#">Syarat & Ketentuan</a> dan <a href="#">Kebijakan Privasi</a>.
+                    </label>
+                </div>
+              
+                <div class="form-group-checkbox">
+                    <label class="form-group-checkbox">
+                    <input type="checkbox" name="newsletter" /> Saya ingin berlangganan Newsletter.
+                    </label>
+                </div>
+            
+            <button type="submit" class="btn-submit" id="submit-button" disabled>Daftar</button>
+        
+            </form>
+        
+        <p class="captcha">
+            This site is protected by reCAPTCHA and the Google
+            <a href="#">Privacy Policy</a> and
+            <a href="#">Terms of Service</a> apply
+        </p>
+        
+        <p class="login-link">
+            Sudah punya akun? <a href="#" id="login-link">Masuk Sekarang</a>
+        </p>
+    </div>
+</div>
+
+<!-- Link to external JavaScript file -->
+<script src="registrationpage.js"></script>
+</body>
+</html>

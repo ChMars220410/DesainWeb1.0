@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuk - SkillSpan</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    />
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="loginpage.css" />
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="../Login Page/vid login page/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header class="nav">
+        <nav class="navbar">
+            <a href="#">
+                <img src="../Login Page/img login page/logo Daftar.png" alt="Logo" />
+            </a>
+            <span>SkillSpan</span>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="logo">
+            <img src="../Login Page/img login page/logo.png" alt="Logo UNJPEERCONNECT" />
+        </div>
+        
+        <h1>Masuk ke SkillSpan</h1>
+        <p class="subtitle">Yuk, lanjutin belajar kamu di SkillSpan.</p>
+        
+        <button class="btn-google">
+            <img src="../Login Page/img login page/google.png" alt="Google Icon" />
+            Masuk dengan Google
+        </button>
+        
+        <div class="separator">
+            <span>atau</span>
+        </div>
+        
+        <form>
+            <div class="form-group">
+                <label for="email">Email <span style="color: red">*</span></label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Masukkan alamat email kamu"
+                    required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password <span style="color: red">*</span></label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Masukkan password kamu" required />
+                    <span id="togglePassword" class="eye-icon">
+                        <img src="../Login Page/img login page/show.png" alt="Tampilkan Password" id="eyeIcon" />
+                    </span>
+                </div>
+            </div>
+            
+            <div class="form-actions">
+                <label>
+                    <input type="checkbox" /> Ingat Saya
+                </label>
+                <a href="#">Lupa Password?</a>
+            </div>
+            <button type="submit" class="btn-submit" disabled>Masuk</button>
+        </form>
+        
+        <p class="captcha">
+            This site is protected by reCAPTCHA and the Google
+            <a href="#">Privacy Policy</a> and
+            <a href="#">Terms of Service</a> apply
+        </p>
+        
+        <p class="register-link">
+            Belum punya akun? <a href="#" id="register-link">Daftar Sekarang</a>
+        </p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="loginpage.js"></script>
+</body>
+</html>

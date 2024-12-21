@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Page - SkillSpan</title>
+    <link rel="stylesheet" href="forumpage.css">
+</head>
+<body>
+
+<!-- Navigasi -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="#" class="navbar-logo">
+            <img src="img/icon.svg" alt="" />
+        </a>
+    </div>
+    <div class="navbar-nav">
+        <ul>
+            <li name="home">
+                <a href="../Main Page/skillspan.html""> Home </a>
+            </li>
+            <!-- Program & Fasilitas -->
+            <li name="program dan Fasilitas" class="dropdown-parent">
+                <a href="#">
+                    Program & Fasilitas
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+                        </svg>
+                    </i>
+                </a>
+                <!-- Dropdown -->
+                <div class="dropdowns">
+                    <div class="dropdown-list">
+                        <ul>
+                            <li>
+                                <a href="../Forum Page/forumpage.html">
+                                    <img src="img/icon/forum.png" alt="Forum" />
+                                    <span>Forum</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon/syllabus.png" alt="Syllabus" />
+                                    <span>Syllabus</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon/internship.png" alt="Internship" />
+                                    <span>Virtual Internship</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon/bootcamp.png" alt="Bootcamp" />
+                                    <span>Bootcamp Comparasion</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon/payment.png" alt="Payment" />
+                                    <span>Payment Option</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/icon/connect.png" alt="Alumni" />
+                                    <span>Connect With Alumni</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!-- Ulasan -->
+            <li name="ulasan" class="dropdown-parent">
+                <a href="#">
+                    Ulasan
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+                        </svg>
+                    </i>
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">
+                            <img src="img/icon/rating mentor.png" alt="" />
+                            <span>Rating Mentor</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icon/student rating.png" alt="" />
+                            <span>Rating Alumni</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Tentang Kami -->
+            <li name="aboutme" class="dropdown-parent">
+                <a href="#">
+                    Tentang Kami
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3. 396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"></path>
+                        </svg>
+                    </i>
+                </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">
+                            <img src="img/icon/tentang website.png" alt="" />
+                            <span>Tentang Website</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icon/loker.png" alt="" />
+                            <span>Lowongan Kerja</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-extra">
+        <div class="navbar-login">
+            <a href="../Registration Page/registrationpage.html" class="register-link">Daftar</a>
+            <a href="../Login Page/loginpage.html" class="login">Login</a>
+        </div>
+        <div id="hamburger-menu"><i data-feather="menu"></i></div>
+    </div>
+</nav>
+
+<div class="container">
+    <header>
+        <h1>Forum Community</h1>
+    </header>
+    <section class="forum-section">
+        <h2>Topics</h2>
+        <div class="topic-list-header">
+            <div class="topic-list-header-left">
+                <button class="topic-button">Latest</button>
+                <button class="topic-button">Top</button>
+            </div>
+            <div class="topic-list-header-right">
+                <button class="topic-button categories-button">
+                    Categories <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div id="topic-list" class="topic-list">
+            <div class="topic-item">
+                <div class="topic-item-profile">
+                    <img src="../Forum Page/img/orang2.jpg" alt="Profile Picture">
+                </div>
+                <div class="topic-item-info">
+                    <span class="topic-item-title">Sync page + select control not working</span>
+                    <span class="topic-item-category">Ask the Community</span>
+                </div>
+                <div class="topic-item-stats">
+                    <span class="topic-item-stats-item"><i class="fas fa-comments"></i> 2</span>
+                    <span class="topic-item-stats-item">1h</span>
+                </div>
+            </div>
+            <div class="topic-item">
+                <div class="topic-item-profile">
+                    <img src="../Forum Page/img/orang1.jpg" alt="Profile Picture">
+                </div>
+                <div class="topic-item-info">
+                    <span class="topic-item-title">Big news: Coda is acquiring SkillSpan!</span>
+                    <span class="topic-item-category">News from SkillSpan</span>
+                </div>
+                <div class="topic-item-stats">
+                    <span class="topic-item-stats-item"><i class="fas fa-comments"></i> 5</span>
+                    <span class="topic-item-stats-item">2h</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="add-topic-section">
+        <h2>Add a New Topic</h2>
+        <form id="topic-form">
+            <input type="text" id="topic-title" placeholder="Enter topic title" required>
+            <textarea id="topic-content" placeholder="Enter topic content" required></textarea>
+            <button type="submit">Add Topic</button>
+        </form>
+    </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-logo">
+          <img src="img/logo.svg" alt="Skill Span Logo" />
+        </div>
+        <p>
+          <span class="footer-icon">
+            <img src="img/iconfooter/location.svg" alt="Location" />
+          </span>
+          <strong>Skill Span</strong>
+        </p>
+        <p class="footer-address">
+          Gedung L1, Kampus A Universitas Negeri Jakarta,<br />
+          Jalan Rawamangun Muka, Jakarta Timur,<br />
+          Daerah Khusus Ibukota Jakarta 13220
+        </p>
+        <a href="#" class="footer-address"> Lihat di Google Maps </a>
+        <p>
+          <span class="footer-icon">
+            <img src="img/iconfooter/mail.svg" alt="Email" />
+          </span>
+          Email: <a href="mailto:info@skilvul.com">info@skilspan.com</a>
+        </p>
+        <p>
+          <span class="footer-icon">
+            <img src="img/iconfooter/wa.svg" alt="WhatsApp" />
+          </span>
+          WhatsApp: <a href="tel:+6282323450242">+62821 22xx 0x0x</a>
+        </p>
+      </div>
+      <!-- Area Links -->
+      <div class="footer-links">
+        <h4>Skill Span</h4>
+        <ul>
+          <li><a href="#">Karir</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Partner</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Layanan</h4>
+        <ul>
+          <li><a href="#">Kelas</a></li>
+          <li><a href="#">Beasiswa</a></li>
+          <li><a href="#">Challenge</a></li>
+          <li><a href="#">SkilPath</a></li>
+          <li><a href="#">Webinar</a></li>
+          <li><a href="#">Paket</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Bantuan dan Panduan</h4>
+        <ul>
+          <li><a href="#">Syarat dan Ketentuan</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Bantuan</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2024, PT Skill Span Indonesia.</p>
+      <div class="social-icons">
+        <a href="#"
+          ><img src="img/iconfooter/instagram.svg" alt="Instagram"
+        /></a>
+        <a href="#"
+          ><img src="img/iconfooter/linkedin.svg" alt="LinkedIn"
+        /></a>
+        <a href="#"><img src="img/iconfooter/youtube.svg" alt="YouTube" /></a>
+      </div>
+    </div>
+  </footer>
+
+<script src="forumpage.js"></script>
+</body>
+</html>

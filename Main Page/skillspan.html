@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSpan</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="skillspan.css" />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#" class="navbar-logo">
+          <img src="img/icon.svg" alt="" />
+        </a>
+      </div>
+      <div class="navbar-nav">
+        <ul>
+          <li name="home">
+            <a href="../Main Page/skillspan.html"> Home </a>
+          </li>
+          <!-- Program & Fasilitas -->
+          <li name="program dan Fasilitas" class="dropdown-parent">
+            <a href="#">
+              Program & Fasilitas
+              <i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"
+                  ></path>
+                </svg>
+              </i>
+            </a>
+            <!-- Dropdown -->
+            <div class="dropdowns">
+              <div class="dropdown-list">
+                <ul>
+                  <li>
+                    <a href="../Forum Page/forumpage.html">
+                      <img src="img/icon/forum.png" alt="Forum" />
+                      <span>Forum</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icon/syllabus.png" alt="Syllabus" />
+                      <span>Syllabus</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icon/internship.png" alt="Internship" />
+                      <span>Virtual Internship</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-list">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="img/icon/bootcamp.png" alt="Bootcamp" />
+                      <span>Bootcamp Comparasion</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icon/payment.png" alt="Payment" />
+                      <span>Payment Option</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icon/connect.png" alt="Alumni" />
+                      <span>Connect With Alumni</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- Ulasan -->
+          <li name="ulasan" class="dropdown-parent">
+            <a href="#">
+              Ulasan
+              <i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"
+                  ></path>
+                </svg>
+              </i>
+            </a>
+            <ul class="dropdown">
+              <li>
+                <a href="#">
+                  <img src="img/icon/rating mentor.png" alt="" />
+                  <span>Rating Mentor</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icon/student rating.png" alt="" />
+                  <span>Rating Alumni</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Tentang Kami -->
+          <li name="aboutme" class="dropdown-parent">
+            <a href="#">
+              Tentang Kami
+              <i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"
+                  ></path>
+                </svg>
+              </i>
+            </a>
+            <ul class="dropdown">
+              <li>
+                <a href="#">
+                  <img src="img/icon/tentang website.png" alt="" />
+                  <span>Tentang Website</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icon/loker.png" alt="" />
+                  <span>Lowongan Kerja</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-extra">
+        <div class="navbar-login">
+          <a href="../Registration Page/registrationpage.html" class="register-link">Daftar</a>
+          <a href="../Login Page/loginpage.html" class="login">Login</a>
+        </div>
+        <div id="hamburger-menu"><i data-feather="menu"></i></div>
+      </div>
+    </nav>
+    <!-- background -->
+    <section class="hero">
+      <main class="container-background">
+        <div class="background">
+          <video autoplay muted loop>
+            <source src="img/backgorund-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <!-- Search Container -->
+        <div class="search-banner">
+          <div class="search">
+            <h1>Comummunity Skill Span</h1>
+            <p>
+              We're happy to have you here. If you need help, please search
+              before you post.
+            </p>
+            <div class="search-box">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Search....."
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Shape (SVG) -->
+        <div class="bottom-shape overlay">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 283.5 27.8"
+            filter="filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(208deg) brightness(102%) contrast(102%)"
+          >
+            <path
+              class="elementor-shape-fill"
+              d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z"
+            ></path>
+            />
+          </svg>
+        </div>
+      </main>
+    </section>
+    <!-- MAIN OUTLET -->
+    <section class="container">
+      <main class="main-outlet-wrappe">
+        <div class="outlet-categories">
+          <div class="categories">
+            <div class="categories-header">
+              <h3>Top Categories</h3>
+              <a href="">See More</a>
+            </div>
+            <!-- LIST CATEGORIES -->
+            <div class="categories-list">
+              <div class="category-item blue">
+                <span class="icon">❓</span>
+                <p>Ask the Community</p>
+              </div>
+              <div class="category-item red">
+                <span class="icon">📰</span>
+                <p>News from Skill Span</p>
+              </div>
+              <div class="category-item green">
+                <span class="icon">✅</span>
+                <p>Suggestion Box</p>
+              </div>
+            </div>
+          </div>
+          <div class="announcement">
+            <div class="announcement-header">
+              <h3>Announcement</h3>
+              <a href="">See More</a>
+            </div>
+            <div class="announcement-list">
+              <div class="announcement-item">
+                <span class="icon">💡</span>
+                <p>
+                  <strong>Skill Span Tricks 2.0</strong>
+                </p>
+                <span class="date">Feb 20</span>
+              </div>
+              <div class="announcement-item">
+                <span class="icon">💡</span>
+                <p><strong>New version update</strong></p>
+                <span class="date">Feb 11</span>
+              </div>
+              <div class="announcement-item">
+                <span class="icon">💡</span>
+                <p>
+                  <strong
+                    >[New Information] open full scholarship registration
+                    funding</strong
+                  >
+                </p>
+                <span class="date">Jan 31</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- container card -->
+    <section class="container-card">
+      <main>
+        <h1 class="heading-card">Explore Our Programs</h1>
+        <div class="program-container">
+          <!-- Data Analytics -->
+          <div class="card">
+            <div class="card-header">
+              <img src="https://via.placeholder.com/300" alt="Data Analytics" />
+              <h2>Data Analytics</h2>
+            </div>
+            <p class="card-subtitle">Live Program &bull; 3 or 6 Months</p>
+            <ul class="features">
+              <li>&#10003; Understand & solve business problems using data</li>
+              <li>&#10003; Explore AI tools through hands-on projects</li>
+              <li>&#10003; Virtual internship with real cases from partners</li>
+            </ul>
+            <div class="stats">
+              <img src="https://via.placeholder.com/300" alt="Users" />
+              3,500+
+            </div>
+            <div class="actions">
+              <a href="#" class="button full-program">Full Program</a>
+              <a href="#" class="button mini-course">Free Mini Course</a>
+            </div>
+          </div>
+
+          <!-- Digital Marketing -->
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Digital Marketing"
+              />
+              <h2>Digital Marketing</h2>
+            </div>
+            <p class="card-subtitle">Live Program &bull; 3 or 6 Months</p>
+            <ul class="features">
+              <li>
+                &#10003; Hands-on projects to master digital marketing tools
+              </li>
+              <li>&#10003; Run real SME ad campaigns with actual budgets</li>
+              <li>&#10003; Virtual internship with real cases from partners</li>
+            </ul>
+            <div class="stats">
+              <img src="https://via.placeholder.com/30" alt="Users" />
+              5,800+
+            </div>
+            <div class="actions">
+              <a href="#" class="button full-program">Full Program</a>
+              <a href="#" class="button mini-course">Free Mini Course</a>
+            </div>
+          </div>
+
+          <!-- Software Engineering -->
+          <div class="card">
+            <div class="card-header">
+              <img
+                src="https://via.placeholder.com/300"
+                alt="Software Engineering"
+              />
+              <h2>Software Engineering</h2>
+            </div>
+            <p class="card-subtitle">Live Program &bull; 6 or 9 Months</p>
+            <ul class="features">
+              <li>&#10003; Master top programming languages & frameworks</li>
+              <li>
+                &#10003; Hands-on full stack software development projects
+              </li>
+              <li>&#10003; Be mentored by industry experts</li>
+            </ul>
+            <div class="stats">
+              <img src="https://via.placeholder.com/30" alt="Users" />
+              200+
+            </div>
+            <div class="actions">
+              <a href="#" class="button full-program">Full Program</a>
+              <a href="#" class="button mini-course">Free Mini Course</a>
+            </div>
+          </div>
+
+          <!-- AI Academy -->
+          <div class="card">
+            <div class="card-header">
+              <img src="https://via.placeholder.com/300" alt="AI Academy" />
+              <h2>AI Academy</h2>
+            </div>
+            <p class="card-subtitle">
+              New Program &bull; Live Program &bull; 1-6 Weeks
+            </p>
+            <ul class="features">
+              <li>&#10003; Learn from top industry experts from AI ventures</li>
+              <li>
+                &#10003; Leverage AI for Marketers, SEO, Social Media, and
+                Creatives
+              </li>
+              <li>&#10003; Practical techniques using popular AI tools</li>
+            </ul>
+            <div class="stats">
+              <img src="https://via.placeholder.com/30" alt="Users" />
+              1,000+
+            </div>
+            <div class="actions">
+              <a href="#" class="button full-program">Full Program</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- container content -->
+    <section class="container-content">
+      <main class="fill-content">
+        <!-- Bagian Gambar -->
+        <div class="left-content">
+          <img src="img/explore.png" alt="Alumni Group" />
+        </div>
+
+        <!-- Bagian Heading, Deskripsi, dan Button -->
+        <div class="right-content">
+          <div class="subheading-content">
+            <h2>
+              Explore Skill Span Through Alumni Who've Walked the Same Path with
+              You
+            </h2>
+          </div>
+          <div class="description-content">
+            <p>
+              Discover valuable insights and gain inspiration from alumni who
+              have traversed the same path you're on.
+              <br />
+              <br />
+              Explore how Skill Span connects you with experienced individuals
+              who can guide your personal and professional growth.Join our
+              <strong>FREE Telegram group</strong>
+              to connect with people who can help you kickstart your career!
+            </p>
+          </div>
+          <div class="button-content">
+            <a href="https://chat.whatsapp.com" target="_blank">
+              <span>JOIN Telegram GROUP</span>
+            </a>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- logos -->
+    <section class="logos">
+      <main>
+        <div class="logos-wrapping">
+          <div class="logos-heading">
+            <h2>
+              <span>
+                We are proud to help thousands of people
+                <br />
+                find solutions through our hard work
+              </span>
+            </h2>
+          </div>
+          <div class="logos-fill">
+            <div class="logos-slide">
+              <img src="img/connect.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/inspire.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/transform.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/connect.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/inspire.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/transform.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/connect.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/inspire.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/transform.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+            </div>
+            <div class="logos-slide">
+              <img src="img/connect.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/inspire.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/transform.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/connect.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/inspire.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/transform.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/connect.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/inspire.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/transform.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+            </div>
+            <div class="logos-slide">
+              <img src="img/connect.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/inspire.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/transform.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/connect.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/inspire.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/transform.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/connect.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/inspire.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+              <img src="img/transform.svg" alt="" />
+              <img src="img/dot.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <img src="img/logo.svg" alt="Skill Span Logo" />
+          </div>
+          <p>
+            <span class="footer-icon">
+              <img src="img/iconfooter/location.svg" alt="Location" />
+            </span>
+            <strong>Skill Span</strong>
+          </p>
+          <p class="footer-address">
+            Gedung L1, Kampus A Universitas Negeri Jakarta,<br />
+            Jalan Rawamangun Muka, Jakarta Timur,<br />
+            Daerah Khusus Ibukota Jakarta 13220
+          </p>
+          <a href="#" class="footer-address"> Lihat di Google Maps </a>
+          <p>
+            <span class="footer-icon">
+              <img src="img/iconfooter/mail.svg" alt="Email" />
+            </span>
+            Email: <a href="mailto:info@skilvul.com">info@skilspan.com</a>
+          </p>
+          <p>
+            <span class="footer-icon">
+              <img src="img/iconfooter/wa.svg" alt="WhatsApp" />
+            </span>
+            WhatsApp: <a href="tel:+6282323450242">+62821 22xx 0x0x</a>
+          </p>
+        </div>
+        <!-- Area Links -->
+        <div class="footer-links">
+          <h4>Skill Span</h4>
+          <ul>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="#">Kelas</a></li>
+            <li><a href="#">Beasiswa</a></li>
+            <li><a href="#">Challenge</a></li>
+            <li><a href="#">SkilPath</a></li>
+            <li><a href="#">Webinar</a></li>
+            <li><a href="#">Paket</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Bantuan dan Panduan</h4>
+          <ul>
+            <li><a href="#">Syarat dan Ketentuan</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Bantuan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© 2024, PT Skill Span Indonesia.</p>
+        <div class="social-icons">
+          <a href="#"
+            ><img src="img/iconfooter/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img src="img/iconfooter/linkedin.svg" alt="LinkedIn"
+          /></a>
+          <a href="#"><img src="img/iconfooter/youtube.svg" alt="YouTube" /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- SCRIPT FONTS -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- SCRIPTING WEB -->
+    <script src="skillspan.js"></script>
+  </body>
+</html>
